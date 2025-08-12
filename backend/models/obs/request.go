@@ -23,11 +23,17 @@ type RequestOp struct {
 	RequestData RequestData `json:"requestData,omitempty"`
 }
 
+/*  names for properties directly taken from: 
+	https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#message-types-opcodes
+*/
 type OBSRequest struct {
 	Op int       `json:"op"`
 	D  RequestOp `json:"d"`
 }
 
+/*  names for properties directly taken from: 
+	https://github.com/obsproject/obs-websocket/blob/master/docs/generated/protocol.md#message-types-opcodes
+*/
 type OBSIdentify struct {
 	Op int        `json:"op"`
 	D  IdentifyOp `json:"d"`

@@ -1,3 +1,3 @@
 package controllers
 
-const WS_SERVER string = "ws://192.168.1.2:4455"
+const WS_SERVER string = "ws://localhost:4455"
